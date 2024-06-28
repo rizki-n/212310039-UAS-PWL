@@ -1,0 +1,52 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.hero {
+  background-image: url('../src/assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.paketPage{
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
+}
+
+.jenisPaket{
+  display: flex;
+  flex-direction: row;
+}
+
+.mapUI {
+  height: 300px; /* Adjust height as needed */
+  width: 100%;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 8px; /* Optional: add rounded corners */
+  overflow: hidden; /* Ensure content does not overflow */
+  margin-top: 20px; /* Adjust as needed for spacing */
+  position: relative; /* Ensures the map stays within bounds */
+}
+
+
