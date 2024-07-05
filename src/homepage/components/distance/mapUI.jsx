@@ -1,5 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup, Polyline } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  Polyline,
+} from "react-leaflet";
 import L from "leaflet";
 import "../../../index.css";
 import { getDistance } from "geolib";
@@ -55,7 +61,10 @@ const MapUI = ({ customerLocation, updatePrice }) => {
                 <b>Customer Location</b>
               </Popup>
             </Marker>
-            <Polyline positions={[adminLocation, customerLocation]} color="blue" />
+            <Polyline
+              positions={[adminLocation, customerLocation]}
+              color="blue"
+            />
           </>
         )}
       </MapContainer>

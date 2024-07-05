@@ -22,9 +22,9 @@ const getCustomerById = async (req, res) => {
 };
 
 const postCustomers = async (req, res) => {
-  const { username, email, address, creditCard, paket, harga } = req.body;
+  const { username, email, location, creditCard, paket, harga } = req.body;
 
-  if (!username || !email || !address || !creditCard) {
+  if (!username || !email || !location || !creditCard) {
     return res.status(400).json("ISI DATANYA!!!");
   }
 
@@ -36,7 +36,7 @@ const postCustomers = async (req, res) => {
       const addOrder = new customers({
         username,
         email,
-        address,
+        location,
         creditCard,
         paket,
         harga,

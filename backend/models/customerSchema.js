@@ -9,7 +9,7 @@ const customerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    address: {
+    location: {
         type: String,
         required: true
     },
@@ -25,8 +25,8 @@ const customerSchema = new mongoose.Schema({
         type: Number,
         required: true
     }
-}, { timestamps: true });  // Menambahkan timestamps
+}, { timestamps: true });
 
-const customers = new mongoose.model('customers', customerSchema);
+const customers = mongoose.model('customers', customerSchema);
 
 module.exports = customers;

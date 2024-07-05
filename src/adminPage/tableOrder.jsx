@@ -42,7 +42,7 @@ const TableOrder = () => {
             <th scope="col">ID</th>
             <th scope="col">Username</th>
             <th scope="col">Email</th>
-            <th scope="col">Address</th>
+            <th scope="col">Location</th>
             <th scope="col">Paket</th>
             <th scope="col">Harga</th>
             <th scope="col">Action</th>
@@ -54,7 +54,7 @@ const TableOrder = () => {
               <td>{index + 1}</td>
               <td>{customer.username}</td>
               <td>{customer.email}</td>
-              <td>{customer.address}</td>
+              <td>{customer.location}</td>
               <td>{customer.paket}</td>
               <td>{customer.harga}</td>
               <td>
