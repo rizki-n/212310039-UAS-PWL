@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import IMAGE from '../assets/camera.jpg';
+import IMAGE from "../assets/camera.jpg";
 
 const Landingpage = () => {
   return (
@@ -16,16 +16,15 @@ const Landingpage = () => {
             loading="lazy"
           />
         </div>
-        
+
         <div className="col-lg-6">
           <h1 className="display-3  fw-bold text-body-emphasis lh-1 mb-3">
             Photography for Hire
           </h1>
           <p className="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+            Ready to capture your moments with us? Contact Ade Studio today to
+            book your session or inquire about our services. We look forward to
+            working with you and creating beautiful memories together
           </p>
 
           {/* <div className="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -36,7 +35,6 @@ const Landingpage = () => {
               Login
             </button>
           </div> */}
-        
         </div>
       </div>
     </div>

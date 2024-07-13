@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import coordinates from "../homepage/components/distance/dummyLocation";
 import { getDistance } from "geolib";
 
-const Paket1 = () => {
+const Paket3 = () => {
   const [inputValue, setInputValue] = useState({
     username: "",
     email: "",
     location: "",
     creditCard: "",
     paket: "Paket 1",
-    harga: 750000,
+    harga: 2500000,
   });
   const [customerLocation, setCustomerLocation] = useState(null);
-  const [finalPrice, setFinalPrice] = useState(750000);
+  const [finalPrice, setFinalPrice] = useState(2500000);
   const [distanceInKm, setDistanceInKm] = useState(0);
 
   const adminLocation = {
@@ -54,7 +54,7 @@ const Paket1 = () => {
 
   const updatePrice = (distance) => {
     const additionalCost = distance * 10000;
-    setFinalPrice(750000 + additionalCost);
+    setFinalPrice(2500000 + additionalCost);
   };
 
   const addCustomerData = async (e) => {
@@ -87,10 +87,10 @@ const Paket1 = () => {
         location: "",
         creditCard: "",
         paket: "Paket 1",
-        harga: 750000,
+        harga: 2500000,
       });
       setDistanceInKm(0);
-      setFinalPrice(750000);
+      setFinalPrice(2500000);
       setCustomerLocation(null);
       alert("Pesanan menunggu persetujuan");
     }
@@ -99,12 +99,12 @@ const Paket1 = () => {
   return (
     <div className="container">
       <div className="py-5 text-center">
-        <h2>PAKET 1</h2>
-        <h2>Rp 750.000</h2>
+        <h2>PAKET 3</h2>
+        <h2>Rp 2.500.000</h2>
       </div>
       
-      <div className="row g-5">
-        <div className="col-md-7 col-lg-5">
+      {/* <div className="row g-5"> */}
+        <div className="col-md-7 col-lg-5 mx-auto">
           <h4 className="mb-3">Ketentuan Paket</h4>
           <h5>- 1 Album 10 Halaman</h5>
           <h5>- Master Photo</h5>
@@ -226,11 +226,11 @@ const Paket1 = () => {
           </form>
         </div>
       </div>
-    </div>
+    //</div>
   );
 };
 
-export default Paket1;
+export default Paket3;
 
 
 

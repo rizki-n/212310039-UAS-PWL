@@ -11,7 +11,7 @@ const Headers = () => {
           <a className="navbar-brand" href="#">
             Logo
           </a>
-          <button
+          {/* <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -41,7 +41,7 @@ const Headers = () => {
                 login
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>

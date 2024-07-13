@@ -24,6 +24,10 @@ const customerSchema = new mongoose.Schema({
     harga: {
         type: Number,
         required: true
+    },
+    tanggal: {
+        type: Date,
+        required: true
     }
 }, { timestamps: true });
 

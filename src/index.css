@@ -49,4 +49,20 @@ code {
   position: relative; /* Ensures the map stays within bounds */
 }
 
+.container-fluid {
+  padding: 20px;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.dataCard {
+  margin: 20px 0;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+}
 

@@ -37,14 +37,16 @@ export default class Homepage extends Component {
                 <Card2 />
               </div>
               <div className="col-md-3 ">
-                <Card1 />
+                <Card3 />
               </div>
             </div>
           </div>
 
           <div>
-            <Distance />
+            {/* <Distance /> */}
+            <></>
           </div>
+        
         </div>
         <Footers />
       </div>

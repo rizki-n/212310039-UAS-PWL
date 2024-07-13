@@ -45,6 +45,7 @@ const TableOrder = () => {
             <th scope="col">Location</th>
             <th scope="col">Paket</th>
             <th scope="col">Harga</th>
+            <th scope="col">Tanggal</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
@@ -57,6 +58,7 @@ const TableOrder = () => {
               <td>{customer.location}</td>
               <td>{customer.paket}</td>
               <td>{customer.harga}</td>
+              <td>{new Date(customer.tanggal).toLocaleDateString()}</td>
               <td>
                 {acceptedOrders[customer._id] ? (
                   <button className="btn btn-secondary" disabled>
