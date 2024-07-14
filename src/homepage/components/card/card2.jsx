@@ -59,7 +59,7 @@ const Card2 = () => {
       { latitude: adminLocation.lat, longitude: adminLocation.lng },
       { latitude: customerLocation.lat, longitude: customerLocation.lng }
     );
-    const distanceInKm = (dist / 1000).toFixed(2);
+    const distanceInKm = (dist / 1000);
     setDistanceInKm(distanceInKm);
     updatePrice(distanceInKm);
   };
